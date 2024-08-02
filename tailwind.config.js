@@ -13,6 +13,26 @@ module.exports = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
     },
+    screens: {
+      "3xl": { max: "1536px" },
+
+      "2xl": { max: "1440px" },
+
+      xl: { max: "1279px" },
+
+      lg: { max: "1023px" },
+
+      md: { max: "767px" },
+
+      sm: { max: "540px" },
+    },
+    fontFamily: {
+      poppins: ['"Poppins", sans-serif'],
+
+      volkhov: ['"Volkhov", serif'],
+
+      yesteryear: ['"Yesteryear", cursive'],
+    },
   },
   plugins: [],
 };

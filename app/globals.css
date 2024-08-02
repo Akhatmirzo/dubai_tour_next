@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Yesteryear&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -16,18 +20,108 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.container {
+  max-width: 1480px;
+  padding-inline: 20px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 540px) {
+  .container {
+    padding-inline: 8px;
+  }
+}
+
+/* Hero title */
+.hero_title > span {
+  position: relative;
+  z-index: 10;
+}
+
+.hero_title > span:nth-child(1) {
+  color: #e09132;
+}
+
+.hero_title > span:nth-child(1)::after {
+  content: "";
+  width: 105%;
+  height: 50px;
+  background-color: white;
+
+  position: absolute;
+  top: 14%;
+  left: -2%;
+  z-index: -1;
+}
+
+.hero_title > span:where(:nth-child(2), :nth-child(3))::after {
+  content: "";
+  width: 100%;
+  height: 32px;
+  background-color: #e09132;
+
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+  z-index: -1;
+}
+
+@media (max-width: 540px) {
+  .hero_title > span:where(:nth-child(2), :nth-child(3))::after {
+    height: 18px;
+  }
+
+  .hero_title > span:nth-child(1)::after {
+    height: 28px;
+  }
+}
+
+/* advantges */
+.advantages_hero::after {
+  content: "";
+  width: 100%;
+  height: 103%;
+  border-top: 2px solid #a7327a;
+  border-right: 2px solid #a7327a;
+  border-top-left-radius: 450px;
+  border-top-right-radius: 450px;
+
+  position: absolute;
+  top: -20px;
+  right: -18px;
+  z-index: -10;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  position: absolute;
+  left: 20px;
+  font-size: 20px;
+  opacity: 0.5;
+}
+
+.rmeditdate:invalid::before {
+  content: attr(placeholder);
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  position: absolute;
+  color: rgba(0, 0, 0, 0.521);
+  left: 55px;
+}
+
+.rmeditdate:valid::before {
+  content: "";
+}
+
+.rmeditdate::-webkit-datetime-edit {
+  opacity: 0;
+}
+
+.visiblermeditdate::-webkit-datetime-edit {
+  opacity: 1 !important;
 }
