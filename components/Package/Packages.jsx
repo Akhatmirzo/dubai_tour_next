@@ -9,6 +9,12 @@ export default function Packages() {
   const packages = packagesData;
   const [count, setCount] = useState(6);
 
+  const PlusCount = () => {
+    if (packagesData.length >= count) {
+      setCount(count + 6);
+    }
+  };
+
   return (
     <div className="mt-[-150px] relative z-10">
       <div className="container sm:p-[0px_!important]">
@@ -20,7 +26,7 @@ export default function Packages() {
               );
             })}
           </div>
-          <PrimaryBtn text={"See more"} clickFn={() => setCount(count + 6)} />
+          <PrimaryBtn text={"See more"} clickFn={PlusCount} />
         </div>
       </div>
     </div>

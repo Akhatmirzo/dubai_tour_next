@@ -26,9 +26,12 @@ export default function PackageCard({ packageItem }) {
       </Link>
       <h3 className=" mt-[9px]">
         <span className="text-[#DF6951] text-2xl">{sellPrice} AED</span>
-        <span className="line-through text-gray-400 ml-[15px]">
-          {price} AED
-        </span>
+        {price ||
+          (price > 0 && (
+            <span className="line-through text-gray-400 ml-[15px]">
+              {price} AED
+            </span>
+          ))}
       </h3>
       <p className=" mt-[4px]">{detail}</p>
       <button

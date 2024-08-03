@@ -17,22 +17,17 @@ export default function Accordions() {
     {
       title: "WHY CHOOSE US",
       content:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "Book Dubai Tours stands out as a premier tour operator for Dubai Desert Safari , Dubai Tours, Dubai Dhow Cruise, Quad and Buggy Drive Tour, in Dubai. We take pride in delivering top-notch ⭐ ⭐ ⭐ ⭐ ⭐ service, offering you an immersive experience We cater to a diverse range of preferences, with tours and packages that can be customized to fit your budget. From standard to premium options, all our packages are designed to ensure your satisfaction, making every penny spent worthwhile.",
     },
     {
       title: "Terms & Conditions",
       content:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "Once we receive your booking after you will receive a confirmation email and Wattsapp with payment link to pay 50% amount of tour within 24 hours, Once payment received your booking will b confirmed. Remaining 50%Amount of tour you have to pay on your tour day.",
     },
     {
       title: "Cancellation Policy",
       content:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    },
-    {
-      title: "FAQ",
-      content:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "Cancellation of reservations before 12 hours won’t cost you anything. Any cancellation made within 12 hours will be 50% chargeable. The refund amount will reflect in your bank account within seven days if you are eligible.",
     },
     {
       title: "Does my company need help for marketing advices?",
@@ -54,9 +49,7 @@ export default function Accordions() {
               backgroundColor: "transparent",
               borderBottom: "1px solid #E09132",
               borderTop:
-                index !== 0
-                  ? "1px solid transparent"
-                  : "1px solid #E09132",
+                index !== 0 ? "1px solid transparent" : "1px solid #E09132",
               borderRadius: "1px !important",
               justifyContent: "center",
               alignItems: "center",
@@ -78,7 +71,9 @@ export default function Accordions() {
               </h3>
             </AccordionSummary>
             <AccordionDetails>
-              <p className="text-[18px] leading-[26px] md:text-[16px] sm:text-[12px]">{item.content}</p>
+              <p className="text-[18px] leading-[26px] md:text-[16px] sm:text-[12px]">
+                {item.content}
+              </p>
             </AccordionDetails>
           </Accordion>
         );

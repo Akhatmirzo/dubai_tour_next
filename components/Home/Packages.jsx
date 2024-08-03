@@ -27,7 +27,7 @@ const Packages = () => {
           </div>
           <div className="grid grid-cols-3 gap-10 lg:grid-cols-2 md:grid-cols-1">
             {packages.map((item, index) => {
-              return <PackageCard key={uid()} packageItem={item} />;
+              return index < 6 && <PackageCard key={uid()} packageItem={item} />;
             })}
           </div>
           <PrimaryBtn text={"View Packages"} clickFn={vewPackages} />
