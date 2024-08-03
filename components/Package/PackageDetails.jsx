@@ -29,7 +29,7 @@ export default function PackageDetails() {
     <div>
       <Hero
         text={"Landscapes"}
-        images={"/dubai_tour2.jpg"}
+        images={"/dubai_tour2.webp"}
         subTitle={"Explore"}
       />
 

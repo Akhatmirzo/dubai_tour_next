@@ -9,7 +9,7 @@ export default function Advantages() {
         <div className="relative w-[654px] h-[745px] flex items-end justify-end 2xl:w-[600px] 2xl:h-[700px] lg:hidden">
           <div className="relative w-[73%] h-[95%] mr-[16px] advantages_hero xl:mr-[12px]">
             <img
-              src={"/advantages2.png"}
+              src={"/advantages2.webp"}
               alt=""
               className="w-full h-full object-cover origin-center rounded-t-full"
             />
@@ -21,7 +21,7 @@ export default function Advantages() {
 
           <div className="absolute top-0 left-[67px] w-[230px] h-[230px] rounded-full overflow-hidden 2xl:w-[180px] 2xl:h-[180px]">
             <img
-              src={"/advantages1.jpg"}
+              src={"/advantages1.webp"}
               alt=""
               className="w-full h-full object-cover object-center "
             />
@@ -29,7 +29,7 @@ export default function Advantages() {
 
           <div className="absolute top-1/3 left-0 w-[141px] h-[141px] rounded-full overflow-hidden 2xl:w-[120px] 2xl:h-[120px]">
             <img
-              src={"/advantages4.jpg"}
+              src={"/advantages4.webp"}
               alt=""
               className="w-full h-full object-cover object-center "
             />
@@ -37,7 +37,7 @@ export default function Advantages() {
 
           <div className="absolute top-0 left-1/2 w-[74px] h-[74px] rounded-full overflow-hidden">
             <img
-              src={"/advantages3.png"}
+              src={"/advantages3.webp"}
               alt=""
               className="w-full h-full object-cover object-center "
             />

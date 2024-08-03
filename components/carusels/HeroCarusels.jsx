@@ -27,21 +27,21 @@ export default function HeroCarusels() {
       >
         <SwiperSlide>
           <img
-            src={"/dubai_tour1.jpg"}
+            src={"/dubai_tour1.webp"}
             alt=""
             className="w-full h-full object-cover object-center"
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
-            src={"/dubai_tour2.jpg"}
+            src={"/dubai_tour2.webp"}
             alt=""
             className="w-full h-full object-cover object-center"
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
-            src={"/dubai_tour3.jpg"}
+            src={"/dubai_tour3.webp"}
             alt=""
             className="w-full h-full object-cover object-center"
           />

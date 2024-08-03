@@ -52,24 +52,7 @@ export default function Footer() {
                 <Link href={"/"} className="mt-[12px]">Torronto</Link>
               </div>
             </div>
-            <div className="flex flex-col md:items-center">
-              <h2 className="text-[20px] font-semibold ">
-                Join Our Newsletter
-              </h2>
-              <div className=" flex mt-[21px]">
-                <input
-                  type="text"
-                  className="py-3 px-3 sm:w-full"
-                  placeholder="Your email address"
-                />
-                <button className="py-4 px-3 bg-orange-500 rounded-lg text-white">
-                  Subscribe
-                </button>
-              </div>
-              <p className="text-[15px] text-[#181433] mt-[21px]">
-                * Will send you weekly updates for your better tour packages.
-              </p>
-            </div>
+            
           </div>
         </div>
       </div>

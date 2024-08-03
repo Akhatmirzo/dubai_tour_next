@@ -7,7 +7,7 @@ export default function page() {
     <div>
       <Hero
         text={"Travel With Us"}
-        images={"/dubai_tour2.jpg"}
+        images={"/dubai_tour2.webp"}
         subTitle={"Search tour"}
       />
 

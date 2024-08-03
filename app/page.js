@@ -9,9 +9,9 @@ export default function Home() {
     <div>
       <Hero />
       <Advantages />
+      <Packages />
       <Question />
       <Amazong />
-      <Packages />
     </div>
   );
 }

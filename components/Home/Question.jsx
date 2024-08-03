@@ -1,4 +1,5 @@
 import React from "react";
+import { uid } from "uid";
 
 const Question = () => {
   const QuestionsData = [
@@ -22,7 +23,7 @@ const Question = () => {
   ];
 
   return (
-    <div className="pt-[130px] lg:pt-[100px]">
+    <div className="pt-[30px] lg:pt-[20px]">
       <div className=" container flex items-center">
         <div className=" px-14 pr-0 md:px-0">
           <div>
@@ -33,7 +34,7 @@ const Question = () => {
           </h3>
           <div className="mt-[35px] flex flex-col gap-[40px] w-[674px] md:w-full">
             {QuestionsData.map((question) => (
-              <div className="flex items-center">
+              <div key={uid()} className="flex items-center">
                 <img
                   src={question.image}
                   alt=""
