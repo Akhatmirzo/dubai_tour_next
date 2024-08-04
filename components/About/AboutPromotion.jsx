@@ -3,7 +3,7 @@ import PrimaryBtn from "../Buttons/PrimaryBtn";
 
 export default function AboutPromotion() {
   return (
-    <section className="pt-[50px] pb-[100px] md:pb-[50px]">
+    <section className=" pt-[50px] pb-[100px] md:pb-[50px]">
       <div className="container flex items-center justify-between gap-[18px] lg:justify-center">
         <div className="max-w-[639px] flex flex-col items-start lg:items-center md:gap-[8px]">
           <span className="font-poppins font-bold text-[18px] leading-[27px] tracking-[10%] text-[#DF6951]">Promotion</span>
@@ -19,8 +19,8 @@ export default function AboutPromotion() {
           <PrimaryBtn text={"View Packages"} />
         </div>
 
-        <div className="lg:hidden">
-            <img src={"/aboutPromotion.svg"} alt="About Tour" />
+        <div className="w-1/2 lg:hidden">
+            <img src={"/aboutPromotion.webp"} alt="About Tour" />
         </div>
       </div>
     </section>

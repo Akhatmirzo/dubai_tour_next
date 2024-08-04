@@ -6,19 +6,19 @@ const Question = () => {
     {
       question: "Why the price Difference in Desert Safari packages ?",
       answer: `We cater to a diverse range of preferences, with tours and packages that can be customized to fit your budget.`,
-      image: "/firstImage.svg",
+      image: "/firstImage.webp",
     },
     {
       question: "Dune Bashing place is red desert ?",
       answer:
         "Yes, From standard to premium options, all our packages are designed to ensure your satisfaction, making every penny spent worthwhile.",
-      image: "/swimming.svg",
+      image: "/swimming.webp",
     },
     {
       question: "What to wear during desert safari ?",
       answer:
         "No Dress code But sun protection is Good for you. Sunscreen , sunglasses, scarf/SunHat and sneakers are good for summer. Sunscreen,sunglasses, SunHat/scarf, Sneakers and some warm clothes are good for winter.",
-      image: "/police.svg",
+      image: "/police.webp",
     },
   ];
 
@@ -49,7 +49,7 @@ const Question = () => {
           </div>
         </div>
         <div className="mt-[185px] lg:hidden">
-          <img src={"/plane.svg"} alt="" />
+          <img src={"/plane.webp"} alt="" />
         </div>
       </div>
     </div>
