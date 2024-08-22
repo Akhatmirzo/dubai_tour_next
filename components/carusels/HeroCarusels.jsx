@@ -10,6 +10,7 @@ import "./styles.css";
 
 // import required modules
 import { Pagination, Autoplay } from "swiper/modules";
+import Image from "next/image";
 
 export default function HeroCarusels() {
   return (
@@ -26,23 +27,35 @@ export default function HeroCarusels() {
         className="mySwiper"
       >
         <SwiperSlide>
-          <img
+          <Image
             src={"/dubai_tour1.webp"}
             alt=""
+            loading="lazy"
+            sizes="100vw"
+            width={'100'}
+            height={'100'}
             className="w-full h-full object-cover object-center"
           />
         </SwiperSlide>
         <SwiperSlide>
-          <img
+          <Image
             src={"/dubai_tour2.webp"}
             alt=""
+            loading="lazy"
+            sizes="100vw"
+            width={'100'}
+            height={'100'}
             className="w-full h-full object-cover object-center"
           />
         </SwiperSlide>
         <SwiperSlide>
-          <img
+          <Image
             src={"/dubai_tour3.webp"}
             alt=""
+            loading="lazy"
+            sizes="100vw"
+            width={'100'}
+            height={'100'}
             className="w-full h-full object-cover object-center"
           />
         </SwiperSlide>

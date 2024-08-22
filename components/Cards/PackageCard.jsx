@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import React from "react";
@@ -13,7 +14,11 @@ export default function PackageCard({ packageItem }) {
 
   return (
     <div className=" flex flex-col items-start">
-      <img
+      <Image
+        loading="lazy"
+        sizes="100vw"
+        width={"100"}
+        height={"100"}
         src={image}
         alt=""
         className="w-full h-[350px] object-cover object-center"

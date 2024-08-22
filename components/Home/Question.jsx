@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import { uid } from "uid";
 
@@ -35,7 +36,11 @@ const Question = () => {
           <div className="mt-[35px] flex flex-col gap-[40px] w-[674px] md:w-full">
             {QuestionsData.map((question) => (
               <div key={uid()} className="flex items-center">
-                <img
+                <Image
+                  loading="lazy"
+                  sizes="100vw"
+                  width={"100"}
+                  height={"100"}
                   src={question.image}
                   alt=""
                   className="w-[50px] h-[50px] object-cover"
@@ -49,7 +54,15 @@ const Question = () => {
           </div>
         </div>
         <div className="mt-[185px] lg:hidden">
-          <img src={"/plane.webp"} alt="" />
+          <Image
+            loading="lazy"
+            sizes="100vw"
+            width={"100"}
+            height={"100"}
+            src={"/plane.webp"}
+            alt=""
+            className="w-full"
+          />
         </div>
       </div>
     </section>
