@@ -11,6 +11,9 @@ export default function Hero({ text, subTitle, images, type }) {
           width={"100"}
           height={"100"}
           src={images}
+          blurDataURL="data:image/webp;base64,UklGRjoAAABXRUJQVlA4WAoAAAAQAAAADwAABwAAQUxQSEtAAABtAABGBAAAA4IAA4ECAAAAAAAAAAEAAAABAAAAAQAAAgAAAPwAQIABAA"
+          placeholder={"blur"}
+          priority={true}
           alt=""
           className="w-full h-full object-cover object-center relative z-[1]"
         />

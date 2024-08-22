@@ -33,6 +33,9 @@ export default function HeroCarusels() {
             width={"100"}
             height={"100"}
             className="w-full h-full object-cover object-center"
+            priority={true}
+            placeholder={"blur"}
+            blurDataURL="data:image/webp;base64,UklGRjoAAABXRUJQVlA4WAoAAAAQAAAADwAABwAAQUxQSEtAAABtAABGBAAAA4IAA4ECAAAAAAAAAAEAAAABAAAAAQAAAgAAAPwAQIABAA"
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -43,6 +46,9 @@ export default function HeroCarusels() {
             width={"100"}
             height={"100"}
             className="w-full h-full object-cover object-center"
+            priority={true}
+            placeholder={"blur"}
+            blurDataURL="data:image/webp;base64,UklGRjoAAABXRUJQVlA4WAoAAAAQAAAADwAABwAAQUxQSEtAAABtAABGBAAAA4IAA4ECAAAAAAAAAAEAAAABAAAAAQAAAgAAAPwAQIABAA"
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -53,6 +59,9 @@ export default function HeroCarusels() {
             width={"100"}
             height={"100"}
             className="w-full h-full object-cover object-center"
+            priority={true}
+            placeholder={"blur"}
+            blurDataURL="data:image/webp;base64,UklGRjoAAABXRUJQVlA4WAoAAAAQAAAADwAABwAAQUxQSEtAAABtAABGBAAAA4IAA4ECAAAAAAAAAAEAAAABAAAAAQAAAgAAAPwAQIABAA"
           />
         </SwiperSlide>
       </Swiper>
