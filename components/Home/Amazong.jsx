@@ -2,9 +2,9 @@ import React from "react";
 
 const Amazong = () => {
   return (
-    <div className="my-[118px] lg:my-[85px] md:hidden">
+    <section className="my-[118px] lg:my-[85px] md:hidden">
       <img src={"/photoAmazong.webp"} alt="" className="w-full text-center"/>
-    </div>
+    </section>
   );
 };
 

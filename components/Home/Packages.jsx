@@ -16,7 +16,7 @@ const Packages = () => {
   };
 
   return (
-    <div className="py-[50px]">
+    <section className="py-[50px]">
       <div className=" container">
         <div className="flex items-center gap-[30px] flex-col">
           <div className="mb-[30px]">
@@ -33,7 +33,7 @@ const Packages = () => {
           <PrimaryBtn text={"View Packages"} clickFn={vewPackages} />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

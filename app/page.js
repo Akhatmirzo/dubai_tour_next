@@ -6,12 +6,12 @@ import Question from "@/components/Home/Question";
 
 export default function Home() {
   return (
-    <div>
+    <>
       <Hero />
       <Advantages />
       <Packages />
       <Question />
       <Amazong />
-    </div>
+    </>
   );
 }

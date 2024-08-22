@@ -23,7 +23,7 @@ const Question = () => {
   ];
 
   return (
-    <div className="pt-[30px] lg:pt-[20px]">
+    <section className="pt-[30px] lg:pt-[20px]">
       <div className=" container flex items-center">
         <div className=" px-14 pr-0 md:px-0">
           <div>
@@ -52,7 +52,7 @@ const Question = () => {
           <img src={"/plane.webp"} alt="" />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

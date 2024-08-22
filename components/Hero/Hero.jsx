@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Hero({text, subTitle, images}) {
   return (
-    <div className={`w-full h-screen relative`}>
+    <section className={`w-full h-screen relative`}>
       <div className="w-full h-full absolute top-0 left-0 z-0">
         <div className="w-full h-full z-[5] absolute top-0 left-0 bg-[#00000048]"></div>
         <img
@@ -17,6 +17,6 @@ export default function Hero({text, subTitle, images}) {
           {text}
         </h2>
       </div>
-    </div>
+    </section>
   )
 }

@@ -9,6 +9,7 @@ import { PackagePlan } from "./PackagePlan";
 import { PackageLocation } from "./PackageLocation";
 import { BookTheTourCard } from "../Cards/BookTheTourCard";
 import { packagesData } from "../static/Static";
+import Head from "next/head";
 
 export default function PackageDetails() {
   const packages = packagesData;
@@ -26,14 +27,14 @@ export default function PackageDetails() {
   }, [id]);
 
   return (
-    <div>
+    <>
       <Hero
         text={"Landscapes"}
         images={"/dubai_tour2.webp"}
         subTitle={"Explore"}
       />
 
-      <div className="-mt-[65px] relative z-10">
+      <section className="-mt-[65px] relative z-10">
         <div className="container">
           <PackageNav buttons={buttons} setButtons={setButtons} />
 
@@ -47,7 +48,7 @@ export default function PackageDetails() {
             <BookTheTourCard packageData={pack} />
           </div>
         </div>
-      </div>
-    </div>
+      </section>
+    </>
   );
 }

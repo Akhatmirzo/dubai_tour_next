@@ -16,7 +16,7 @@ export default function Packages() {
   };
 
   return (
-    <div className="mt-[-150px] relative z-10">
+    <section className="mt-[-150px] relative z-10">
       <div className="container sm:p-[0px_!important]">
         <div className=" flex flex-col gap-10 items-center bg-white p-10 rounded-xl sm:p-2">
           <div className="grid grid-cols-3 gap-10 lg:grid-cols-2 md:grid-cols-1">
@@ -29,6 +29,6 @@ export default function Packages() {
           <PrimaryBtn text={"See more"} clickFn={PlusCount} />
         </div>
       </div>
-    </div>
+    </section>
   );
 }

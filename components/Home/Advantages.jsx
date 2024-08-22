@@ -4,7 +4,7 @@ import Accordions from "../Accordion/Accordions";
 
 export default function Advantages() {
   return (
-    <div className="py-[150px] pb-0 xl:py-[120px] sm:py-[50px]">
+    <section className="py-[150px] pb-0 xl:py-[120px] sm:py-[50px]">
       <div className="container flex items-center gap-5">
         <div className="relative w-[654px] h-[745px] flex items-end justify-end 2xl:w-[600px] 2xl:h-[700px] lg:hidden">
           <div className="relative w-[73%] h-[95%] mr-[16px] advantages_hero xl:mr-[12px]">
@@ -51,6 +51,6 @@ export default function Advantages() {
           <Accordions />
         </div>
       </div>
-    </div>
+    </section>
   );
 }
