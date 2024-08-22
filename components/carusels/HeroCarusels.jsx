@@ -29,10 +29,9 @@ export default function HeroCarusels() {
           <Image
             src={"/dubai_tour1.webp"}
             alt=""
-            loading="lazy"
             sizes="100vw"
-            width={'100'}
-            height={'100'}
+            width={"100"}
+            height={"100"}
             className="w-full h-full object-cover object-center"
           />
         </SwiperSlide>
@@ -40,10 +39,9 @@ export default function HeroCarusels() {
           <Image
             src={"/dubai_tour2.webp"}
             alt=""
-            loading="lazy"
             sizes="100vw"
-            width={'100'}
-            height={'100'}
+            width={"100"}
+            height={"100"}
             className="w-full h-full object-cover object-center"
           />
         </SwiperSlide>
@@ -51,10 +49,9 @@ export default function HeroCarusels() {
           <Image
             src={"/dubai_tour3.webp"}
             alt=""
-            loading="lazy"
             sizes="100vw"
-            width={'100'}
-            height={'100'}
+            width={"100"}
+            height={"100"}
             className="w-full h-full object-cover object-center"
           />
         </SwiperSlide>

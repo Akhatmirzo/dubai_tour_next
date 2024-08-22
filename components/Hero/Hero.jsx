@@ -7,7 +7,6 @@ export default function Hero({ text, subTitle, images }) {
       <div className="w-full h-full absolute top-0 left-0 z-0">
         <div className="w-full h-full z-[5] absolute top-0 left-0 bg-[#00000048]"></div>
         <Image
-          loading="lazy"
           sizes="100vw"
           width={"100"}
           height={"100"}
