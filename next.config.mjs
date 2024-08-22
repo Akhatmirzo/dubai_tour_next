@@ -1,10 +1,8 @@
+// next.config.js
+
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {
+  reactStrictMode: true, // Reactning qat'iy rejimi yoqilgan
+}
 
-import withBundleAnalyzer from '@next/bundle-analyzer';
-
-const bundleAnalyzer = withBundleAnalyzer({
-  enabled: process.env.ANALYZE === 'true',
-})
-
-export default bundleAnalyzer(nextConfig);
+module.exports = nextConfig;
