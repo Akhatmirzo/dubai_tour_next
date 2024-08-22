@@ -25,6 +25,8 @@ module.exports = {
       md: { max: "767px" },
 
       sm: { max: "540px" },
+
+      '2sm': { max: "375px"},
     },
     fontFamily: {
       poppins: ['"Poppins", sans-serif'],

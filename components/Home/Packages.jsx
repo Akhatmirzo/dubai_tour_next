@@ -25,7 +25,7 @@ const Packages = () => {
               Our Trending Tour <br /> Packages
             </h3>
           </div>
-          <div className="grid grid-cols-3 gap-10 lg:grid-cols-2 md:grid-cols-1">
+          <div className="grid grid-cols-3 gap-10 sm:gap-3 lg:grid-cols-2 md:grid-cols-2">
             {packages.map((item, index) => {
               return index < 6 && <PackageCard key={uid()} packageItem={item} />;
             })}

@@ -13,7 +13,7 @@ export default function PackageCard({ packageItem }) {
   };
 
   return (
-    <div className=" flex flex-col items-start">
+    <div className="h-full flex flex-col">
       <Image
         loading="lazy"
         sizes="100vw"
@@ -21,30 +21,37 @@ export default function PackageCard({ packageItem }) {
         height={"100"}
         src={image}
         alt=""
-        className="w-full h-[350px] object-cover object-center"
+        className="w-full h-[350px] md:h-[250px] sm:h-[200px] 2sm:h-[150px] object-cover object-center"
       />
-      <Link
-        href={`/package/${id}`}
-        className=" underline cursor-pointer hover:text-blue-500 text-2xl mt-[38px]"
-      >
-        {name}
-      </Link>
-      <h3 className=" mt-[9px]">
-        <span className="text-[#DF6951] text-2xl">{sellPrice} AED</span>
-        {price ||
-          (price > 0 && (
-            <span className="line-through text-gray-400 ml-[15px]">
-              {price} AED
-            </span>
-          ))}
-      </h3>
-      <p className=" mt-[4px]">{detail}</p>
-      <button
-        onClick={() => handleClick(id)}
-        className=" bg-[#DF6951] py-3 px-6  rounded-lg text-white mt-[32px]"
-      >
-        Explore Now
-      </button>
+      <div className="border p-1">
+        <Link
+          href={`/package/${id}`}
+          style={{'--i': 1, '--oriented': 'vertical'}}
+          className="detailDesc underline cursor-pointer hover:text-blue-500 text-2xl mt-[38px] md:mt-3 md:text-xl sm:text-lg"
+        >
+          {name}
+        </Link>
+        <h3 className=" mt-[9px]">
+          <span className="text-[#DF6951] text-2xl md:text-xl sm:text-lg">{sellPrice} AED</span>
+          {price ||
+            (price > 0 && (
+              <span className="line-through text-gray-400 ml-[15px]">
+                {price} AED
+              </span>
+            ))}
+        </h3>
+        <div className="">
+          <p style={{'--i': 3,'--oriented': 'vertical'}} className="detailDesc overflow-ellipsis mt-[4px] md:text-[14px] sm:text-[12px]">
+            {detail}
+          </p>
+        </div>
+        <button
+          onClick={() => handleClick(id)}
+          className=" bg-[#DF6951] py-3 px-6 sm:py-1 sm:px-3 mt-3 sm:text-sm rounded-lg text-white self-end content-end"
+        >
+          Explore Now
+        </button>
+      </div>
     </div>
   );
 }
