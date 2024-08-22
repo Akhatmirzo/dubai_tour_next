@@ -13,7 +13,7 @@ export default function PackageCard({ packageItem }) {
   };
 
   return (
-    <div className="h-full flex flex-col">
+    <div className="h-full flex flex-col shadow-xl">
       <Image
         loading="lazy"
         sizes="100vw"
@@ -23,16 +23,18 @@ export default function PackageCard({ packageItem }) {
         alt=""
         className="w-full h-[350px] md:h-[250px] sm:h-[200px] 2sm:h-[150px] object-cover object-center"
       />
-      <div className="border p-1">
+      <div className="sm:border sm:p-1 lg:p-3 p-5 h-full">
         <Link
           href={`/package/${id}`}
-          style={{'--i': 2, '--oriented': 'vertical'}}
-          className="detailDesc underline cursor-pointer hover:text-blue-500 text-2xl mt-[38px] md:mt-3 md:text-xl sm:text-lg"
+          style={{ "--i": 2, "--oriented": "vertical" }}
+          className="detailDesc underline cursor-pointer hover:text-blue-500 text-2xl mt-[38px] md:mt-3 md:text-xl sm:text-lg 2sm:text-base"
         >
           {name}
         </Link>
         <h3 className=" mt-[9px]">
-          <span className="text-[#DF6951] text-2xl md:text-xl sm:text-lg">{sellPrice} AED</span>
+          <span className="text-[#DF6951] text-2xl md:text-xl sm:text-lg">
+            {sellPrice} AED
+          </span>
           {price ||
             (price > 0 && (
               <span className="line-through text-gray-400 ml-[15px]">
@@ -40,14 +42,15 @@ export default function PackageCard({ packageItem }) {
               </span>
             ))}
         </h3>
-        <div className="">
-          <p style={{'--i': 3,'--oriented': 'vertical'}} className="detailDesc overflow-ellipsis mt-[4px] md:text-[14px] sm:text-[12px]">
-            {detail}
-          </p>
-        </div>
+        <p
+          style={{ "--i": 3, "--oriented": "vertical" }}
+          className="detailDesc overflow-ellipsis mt-[4px] md:text-[14px] sm:text-[12px]"
+        >
+          {detail}
+        </p>
         <button
           onClick={() => handleClick(id)}
-          className=" bg-[#DF6951] py-3 px-6 sm:py-1 sm:px-3 mt-3 sm:text-sm rounded-lg text-white self-end content-end"
+          className=" bg-[#DF6951] py-3 px-6 sm:py-1 sm:px-3 mt-3 sm:text-sm rounded-lg text-white self-end justify-self-end content-end"
         >
           Explore Now
         </button>

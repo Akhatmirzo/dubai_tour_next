@@ -1,8 +1,16 @@
+'use client'
 import React from "react";
 import PrimaryBtn from "../Buttons/PrimaryBtn";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 export default function AboutPromotion() {
+  const navigate = useRouter()
+
+  const handleClick = () => {
+    window.scrollTo(0, 0);
+    navigate.push(`/package`);
+  };
   return (
     <section className=" pt-[50px] pb-[100px] md:pb-[50px]">
       <div className="container flex items-center justify-between gap-[18px] lg:justify-center">
@@ -21,7 +29,7 @@ export default function AboutPromotion() {
             available at the best prices in town.
           </p>
 
-          <PrimaryBtn text={"View Packages"} />
+          <PrimaryBtn clickFn={handleClick} text={"View Packages"} />
         </div>
 
         <div className="w-1/2 lg:hidden">
