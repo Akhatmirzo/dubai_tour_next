@@ -29,11 +29,11 @@ module.exports = {
       '2sm': { max: "375px"},
     },
     fontFamily: {
-      poppins: ['"Poppins", sans-serif'],
+      poppins: ['var(--font-poppins), sans-serif'],
 
-      volkhov: ['"Volkhov", serif'],
+      volkhov: ['var(--font-volkhov), sans-serif'],
 
-      yesteryear: ['"Yesteryear", cursive'],
+      yesteryear: ['var(--font-yesteryear), cursive'],
     },
   },
   plugins: [],
