@@ -26,7 +26,7 @@ export default function PackageCard({ packageItem }) {
       <div className="border p-1">
         <Link
           href={`/package/${id}`}
-          style={{'--i': 1, '--oriented': 'vertical'}}
+          style={{'--i': 2, '--oriented': 'vertical'}}
           className="detailDesc underline cursor-pointer hover:text-blue-500 text-2xl mt-[38px] md:mt-3 md:text-xl sm:text-lg"
         >
           {name}
