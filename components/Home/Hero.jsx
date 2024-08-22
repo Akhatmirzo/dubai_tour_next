@@ -12,7 +12,7 @@ export default function Hero() {
           className="max-w-[630px] text-[55px] font-poppins leading-[68px] font-bold text-white hero_title xl:text-[50px] md:text-[35px] sm:text-[24px] md:max-w-[400px] sm:max-w-[280px] xl:leading-[60px] md:leading-normal xl:max-w-[580px] lg:text-center"
         >
           We are <span className="hero_title">Expert</span> in{" "}
-          <span>Desert Safari | Dubai &#x26</span>{" "}
+          <span>Desert Safari | Dubai &</span>{" "}
           <span>Abu Dhabi City Tour</span>
         </h2>
       </div>
