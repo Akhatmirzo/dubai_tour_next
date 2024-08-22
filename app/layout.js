@@ -1,4 +1,4 @@
-import { Inter, Volkhov, Poppins, Yesteryear } from "next/font/google";
+import { Volkhov, Poppins, Yesteryear } from "next/font/google";
 import "./globals.css";
 import LayoutRoot from "@/RootPage/LayoutRoot";
 

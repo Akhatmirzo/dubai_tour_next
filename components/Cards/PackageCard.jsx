@@ -15,7 +15,6 @@ export default function PackageCard({ packageItem }) {
   return (
     <div className="h-full flex flex-col shadow-xl">
       <Image
-        loading="lazy"
         sizes="100vw"
         width={"100"}
         height={"100"}

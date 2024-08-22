@@ -12,7 +12,6 @@ export default function Advantages() {
             <Image
               src={"/advantages2.webp"}
               alt=""
-              loading="lazy"
               sizes="100vw"
               width={"100"}
               height={"100"}
@@ -28,7 +27,6 @@ export default function Advantages() {
             <Image
               src={"/advantages1.webp"}
               alt=""
-              loading="lazy"
               sizes="100vw"
               width={"100"}
               height={"100"}
@@ -40,7 +38,6 @@ export default function Advantages() {
             <Image
               src={"/advantages4.webp"}
               alt=""
-              loading="lazy"
               sizes="100vw"
               width={"100"}
               height={"100"}
@@ -52,7 +49,6 @@ export default function Advantages() {
             <Image
               src={"/advantages3.webp"}
               alt=""
-              loading="lazy"
               sizes="100vw"
               width={"100"}
               height={"100"}

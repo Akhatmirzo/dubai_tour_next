@@ -1,6 +1,5 @@
 "use client"
 import React from "react";
-import "./style.css";
 import Link from "next/link";
 
 export default function Footer() {

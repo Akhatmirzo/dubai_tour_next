@@ -5,7 +5,6 @@ const Amazong = () => {
   return (
     <section className="my-[118px] lg:my-[85px] md:hidden">
       <Image
-        loading="lazy"
         sizes="100vw"
         width={"100"}
         height={"100"}

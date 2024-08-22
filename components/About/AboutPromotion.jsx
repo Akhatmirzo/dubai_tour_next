@@ -34,7 +34,6 @@ export default function AboutPromotion() {
 
         <div className="w-1/2 lg:hidden">
           <Image
-            loading="lazy"
             sizes="100vw"
             width={"100"}
             height={"100"}

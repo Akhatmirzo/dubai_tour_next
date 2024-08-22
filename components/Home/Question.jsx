@@ -37,7 +37,6 @@ const Question = () => {
             {QuestionsData.map((question) => (
               <div key={uid()} className="flex items-center">
                 <Image
-                  loading="lazy"
                   sizes="100vw"
                   width={"100"}
                   height={"100"}
@@ -55,7 +54,6 @@ const Question = () => {
         </div>
         <div className="mt-[185px] lg:hidden">
           <Image
-            loading="lazy"
             sizes="100vw"
             width={"100"}
             height={"100"}

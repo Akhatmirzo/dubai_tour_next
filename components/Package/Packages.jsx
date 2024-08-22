@@ -1,7 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import PackageCard from "../Cards/PackageCard";
-import PrimaryBtn from "../Buttons/PrimaryBtn";
 import { packagesData } from "../static/Static";
 import { uid } from "uid";
 
