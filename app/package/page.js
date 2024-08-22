@@ -30,7 +30,6 @@ export default function page() {
         images={"/dubai_tour2.webp"}
         subTitle={"Search tour"}
       />
-
       <Packages />
     </>
   );

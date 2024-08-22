@@ -8,7 +8,7 @@ export default function Accordions() {
   const [expanded, setExpanded] = React.useState(false);
   const [isOpen, setOpen] = useState({ bool: false, index: null });
 
-  const handleChange = (panel) => (event, isExpanded) => {
+  const handleChange = (panel) => (_, isExpanded) => {
     setExpanded(isExpanded ? panel : false);
     setOpen({ bool: isExpanded, index: panel });
   };

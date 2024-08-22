@@ -1,6 +1,5 @@
 import PackageDetails from "@/components/Package/PackageDetails";
 import { findPackageById } from "@/utils/findPackageById";
-import Head from "next/head";
 import React from "react";
 
 export async function generateMetadata({ params, searchParams }, parent) {
@@ -15,7 +14,7 @@ export async function generateMetadata({ params, searchParams }, parent) {
   }
 }
 
-export default function page({ params }) {
+export default function page() {
   return (
     <>
       <PackageDetails />
