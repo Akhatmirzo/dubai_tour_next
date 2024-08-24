@@ -4,7 +4,7 @@ import HeroCarusels from "../carusels/HeroCarusels";
 
 export default function Hero() {
   return (
-    <section className={`w-full h-screen relative`}>
+    <section className={`w-full h-screen sm:h-[calc(100vh-30vh)] relative`}>
       <HeroCarusels />
       <div className="container z-[1] relative h-full flex items-center lg:justify-center">
         <h2

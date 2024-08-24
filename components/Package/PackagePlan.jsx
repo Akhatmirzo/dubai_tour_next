@@ -14,7 +14,7 @@ export const PackagePlan = ({ packageData }) => {
   } = packageData || {};
   return (
     <div>
-      <div className="flex flex-col gap-[40px] mt-[40px]">
+      <div className="flex flex-col gap-[40px] sm:gap-[10px] mt-[40px] sm:mt-[20px]">
         <div className="flex items-center flex-wrap">
           <h3 className="w-[300px] whitespace-nowrap text-[#DF6951] text-[20px] font-bold xl:w-1/2 sm:text-[16px]">
             Destination

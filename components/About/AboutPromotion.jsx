@@ -1,11 +1,12 @@
-'use client'
+"use client";
 import React from "react";
 import PrimaryBtn from "../Buttons/PrimaryBtn";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
+import Accordions from "../Accordion/Accordions";
 
 export default function AboutPromotion() {
-  const navigate = useRouter()
+  const navigate = useRouter();
 
   const handleClick = () => {
     window.scrollTo(0, 0);
@@ -28,8 +29,6 @@ export default function AboutPromotion() {
             unbeatable self-drive off-road option through the trackless desert,
             available at the best prices in town.
           </p>
-
-          <PrimaryBtn clickFn={handleClick} text={"View Packages"} />
         </div>
 
         <div className="w-1/2 lg:hidden">
@@ -43,6 +42,14 @@ export default function AboutPromotion() {
           />
         </div>
       </div>
+
+      <div className="mt-5 flex flex-col gap-5 items-center justify-center">
+        <div className="max-w-2xl">
+          <Accordions />
+        </div>
+      <PrimaryBtn clickFn={handleClick} text={"View Packages"} />
+      </div>
+
     </section>
   );
 }

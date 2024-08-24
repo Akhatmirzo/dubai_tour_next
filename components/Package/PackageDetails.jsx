@@ -1,6 +1,6 @@
 "use client";
 /* eslint-disable eqeqeq */
-import React, { useMemo, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import { useParams } from "next/navigation";
 import Hero from "../Hero/Hero";
 import { PackageNav } from "../Header/PackageNav";
@@ -25,9 +25,32 @@ export default function PackageDetails() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [id]);
 
+  useEffect(() => {
+    const handleResize = () => {
+      const width = window.innerWidth;
+      if (width < 1024) {
+        setButtons({
+          info: true,
+          plan: false,
+          location: false,
+        });
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    // Cleanup listener on component unmount
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <>
-      <Hero text={pack?.name} images={pack?.image} subTitle={pack?.duration} type={"tour"} />
+      <Hero
+        text={pack?.name}
+        images={pack?.image}
+        subTitle={pack?.duration}
+        type={"tour"}
+      />
 
       <section className="-mt-[65px] relative z-10">
         <div className="container">
@@ -37,10 +60,14 @@ export default function PackageDetails() {
             <div className="flex grow">
               {buttons.info && <Information packageData={pack} />}
               {buttons.plan && <PackagePlan packageData={pack} />}
-              {buttons.location && <PackageLocation packageData={pack} />}
+              <div className="lg:block grow hidden">
+                {buttons.location && <PackageLocation packageData={pack} />}
+              </div>
             </div>
 
-            <BookTheTourCard packageData={pack} hiddenStyle={true} />
+            <div className="lg:hidden">
+              <BookTheTourCard packageData={pack} />
+            </div>
           </div>
         </div>
       </section>

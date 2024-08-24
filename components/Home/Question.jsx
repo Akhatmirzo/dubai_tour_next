@@ -30,7 +30,7 @@ const Question = () => {
           <div>
             <h2 className=" text-[#E09132]">FAQ</h2>
           </div>
-          <h3 className=" text-4xl mt-[15px]">
+          <h3 className="sm:text-2xl text-4xl mt-[15px]">
             Frequently Asked <br /> Question
           </h3>
           <div className="mt-[35px] flex flex-col gap-[40px] w-[674px] md:w-full">

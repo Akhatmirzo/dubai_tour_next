@@ -5,6 +5,7 @@ import { packagesData } from "../static/Static";
 import { uid } from "uid";
 
 export default function Packages() {
+  const [height, setHeight] = useState(250)
   const packages = packagesData;
 
   const [count, setCount] = useState(6);
@@ -22,11 +23,17 @@ export default function Packages() {
       const heightWindow = wrap.offsetHeight;
       // Sahifa oxiriga yetganligini tekshirish
 
-      if (window.scrollY + 150 >= heightWindow) {
+      if (window.scrollY + height >= heightWindow) {
         if (count < packages?.length) {
-          PlusCount(windowWidth >= 1024 ? 3 : 2);
+          console.log(count);
+          setHeight(height + 250)
+          
+          PlusCount(2);
         }
       }
+
+      console.log(heightWindow, window.scrollY + height, height);
+      
     };
 
     // scroll hodisasini qo'shish
@@ -36,7 +43,7 @@ export default function Packages() {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [height]);
 
   return (
     <section id="packageWrap" className="-mt-[150px] pb-10 relative z-10">

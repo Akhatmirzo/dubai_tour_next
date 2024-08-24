@@ -16,7 +16,7 @@ const Packages = () => {
   };
 
   return (
-    <section className="py-[50px]">
+    <section className="py-[50px] sm:py-[25px]">
       <div className=" container">
         <div className="flex items-center gap-[30px] flex-col">
           <div className="mb-[30px]">

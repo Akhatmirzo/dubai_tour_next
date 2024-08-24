@@ -1,30 +1,11 @@
 import React, { useMemo, useState } from "react";
 import PrimaryBtn from "../Buttons/PrimaryBtn";
 
-export const BookTheTourCard = ({ hiddenStyle }) => {
-  const [hidden, setHidden] = useState(false);
-  const [clickerChange, setClickerChange] = useState(false);
-  const [date, setDate] = useState("");
-
-  const ChangeHiddenValue = () => {
-    if (date.trim()) {
-      setHidden(true);
-    } else {
-      setHidden(false);
-    }
-  };
-
-  const ClickHiddenValue = (bool) => {
-    setClickerChange(bool);
-  };
-
-  useMemo(() => {
-    ChangeHiddenValue();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [date]);
-
+export const BookTheTourCard = () => {
   return (
-    <div className={`min-w-[481px] max-w-[481px] bg-[#EDEDED] p-[40px] lg:max-w-full sm:p-[10px] sm:min-w-0 ${hiddenStyle && "lg:hidden"}`}>
+    <div
+      className={`min-w-[481px] max-w-[481px] bg-[#EDEDED] p-[40px] lg:max-w-full sm:p-[10px] sm:min-w-0`}
+    >
       <h2 className="text-[42px] font-bold text-center sm:text-[26px]">
         Book This Tour
       </h2>
@@ -39,7 +20,7 @@ export const BookTheTourCard = ({ hiddenStyle }) => {
             type="text"
             name="name"
             placeholder="Name"
-            className="w-full pl-[55px] py-[25px] sm:pl-5 sm:py-3 placeholder:font-poppins placeholder:text-[18px]"
+            className="w-full pl-[30px] py-[25px] sm:pl-5 sm:py-3 placeholder:font-poppins placeholder:text-[18px]"
             required
           />
         </label>
@@ -48,22 +29,16 @@ export const BookTheTourCard = ({ hiddenStyle }) => {
             type="tel"
             name="phone"
             placeholder="Phone Number"
-            className="w-full pl-[55px] py-[25px] sm:pl-5 sm:py-3 placeholder:font-poppins placeholder:text-[18px]"
+            className="w-full pl-[30px] py-[25px] sm:pl-5 sm:py-3 placeholder:font-poppins placeholder:text-[18px]"
             required
           />
         </label>
         <label className="relative">
           <input
             type="date"
+            id="date"
             name="date"
-            placeholder="dd-mm-yy"
-            className={`w-full pl-[55px] py-[25px] sm:py-3 ${
-              hidden ? "" : clickerChange ? "" : "rmeditdate"
-            } ${clickerChange ? "visiblermeditdate" : ""}`}
-            onChange={(e) => setDate(e.target.value)}
-            onFocus={() => ClickHiddenValue(true)}
-            onBlur={() => ClickHiddenValue(false)}
-            required
+            className="w-full pl-[45px] py-[25px] sm:py-3 placeholder:font-poppins placeholder:text-[18px]"
           />
         </label>
         <label className="relative">
@@ -71,7 +46,7 @@ export const BookTheTourCard = ({ hiddenStyle }) => {
             type="text"
             name="ticket"
             placeholder="Number of ticket"
-            className="w-full pl-[55px] py-[25px] sm:pl-5 sm:py-3 placeholder:font-poppins placeholder:text-[18px]"
+            className="w-full pl-[30px] py-[25px] sm:pl-5 sm:py-3 placeholder:font-poppins placeholder:text-[18px]"
             required
           />
         </label>
@@ -80,7 +55,8 @@ export const BookTheTourCard = ({ hiddenStyle }) => {
             name="msg"
             id=""
             placeholder="Message"
-            className="w-full pl-[55px] py-[25px] sm:pl-5 sm:py-3 placeholder:font-poppins placeholder:text-[18px]"
+            rows={5}
+            className="w-full pl-[30px] py-[25px] sm:pl-5 sm:py-3 placeholder:font-poppins placeholder:text-[18px]"
           ></textarea>
         </label>
 
