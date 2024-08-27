@@ -2,12 +2,7 @@ import React from "react";
 import { uid } from "uid";
 
 export const Information = ({ packageData }) => {
-  const {
-    name,
-    price,
-    sellPrice,
-    description
-  } = packageData || {};
+  const { name, price, sellPrice, description, person } = packageData || {};
   return (
     <div className="w-full">
       <div className="max-w-[644px] flex items-center justify-between mt-[29px] flex-wrap">
@@ -17,7 +12,7 @@ export const Information = ({ packageData }) => {
         <h3 className="flex items-center text-[29px] sm:text-[22px] font-poppins font-medium text-[#DF6951]">
           <span>
             {sellPrice && (
-              <span className="text-[#DF6951]">{sellPrice + " AED"}</span>
+              <span className="text-[#DF6951]">{"$" + sellPrice}</span>
             )}
             {price ||
               (price > 0 && (
@@ -26,12 +21,12 @@ export const Information = ({ packageData }) => {
                     sellPrice && "text-[20px]"
                   }`}
                 >
-                  {price} AED
+                  ${price}
                 </span>
               ))}
           </span>
           <span className="text-[16px] font-normal leading-[24px]">
-            / Per Couple
+            / {person}
           </span>
         </h3>
       </div>

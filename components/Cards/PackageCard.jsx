@@ -14,14 +14,17 @@ export default function PackageCard({ packageItem }) {
 
   return (
     <div className="h-full flex flex-col shadow-xl">
-      <Image
-        sizes="100vw"
-        width={"100"}
-        height={"100"}
-        src={image}
-        alt=""
-        className="w-full h-[350px] md:h-[250px] sm:h-[200px] 2sm:h-[150px] object-cover object-center"
-      />
+      <div>
+        <Image
+          sizes="(max-width: 768px) 100vw, 33vw"
+          width={500}
+          height={300}
+          src={image}
+          alt=""
+          style={{ objectFit: "cover", objectPosition: "center" }}
+          className="w-full h-[350px] md:h-[250px] sm:h-[200px] 2sm:h-[150px] object-cover object-center"
+        />
+      </div>
       <div className="sm:border sm:p-1 lg:p-3 p-5 h-full">
         <Link
           href={`/package/${id}`}
@@ -32,12 +35,12 @@ export default function PackageCard({ packageItem }) {
         </Link>
         <h3 className=" mt-[9px]">
           <span className="text-[#DF6951] text-2xl md:text-xl sm:text-lg">
-            {sellPrice} AED
+            ${sellPrice}
           </span>
           {price ||
             (price > 0 && (
               <span className="line-through text-gray-400 ml-[15px]">
-                {price} AED
+                ${price}
               </span>
             ))}
         </h3>
